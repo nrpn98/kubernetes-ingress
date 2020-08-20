@@ -212,13 +212,13 @@ jobs:
             tag: ${{ github.sha }}
             marker: 'policies'
             type: plus
-          # - os: ubuntu-18.04
-          #   path: build/appprotect
-          #   file: DockerfileWithAppProtectForPlus
-          #   image: nginx-plus-ingress
-          #   tag: ${{ github.sha }}-ap
-          #   marker: 'appprotect'
-          #   type: plus-ap
+          - os: ubuntu-18.04
+            path: build/appprotect
+            file: DockerfileWithAppProtectForPlus
+            image: nginx-plus-ingress
+            tag: ${{ github.sha }}-ap
+            marker: 'appprotect'
+            type: plus-ap
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
