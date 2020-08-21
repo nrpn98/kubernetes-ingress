@@ -157,7 +157,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: oss
-            k8s: ${{ env.K8S_V1 }}
+            k8s: ${{ K8S_V1 }}
           - os: ubuntu-18.04
             path: build
             file: Dockerfile
@@ -165,7 +165,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: oss
-            k8s: ${{ env.K8S_V2 }}
+            k8s: ${{ K8S_V2 }}
           - os: ubuntu-18.04
             path: build
             file: Dockerfile
@@ -173,7 +173,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: oss
-            k8s: ${{ env.K8S_V3 }}
+            k8s: ${{ K8S_V3 }}
           - os: ubuntu-18.04
             path: build
             file: Dockerfile
@@ -181,7 +181,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: oss
-            k8s: ${{ env.K8S_V4 }}
+            k8s: ${{ K8S_V4 }}
           - os: ubuntu-18.04
             path: build
             file: Dockerfile
@@ -189,7 +189,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: oss
-            k8s: ${{ env.K8S_V5 }}
+            k8s: ${{ K8S_V5 }}
           - os: ubuntu-18.04
             path: build
             file: DockerfileForPlus
@@ -197,7 +197,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: plus
-            k8s: ${{ env.K8S_V1 }}
+            k8s: ${{ K8S_V1 }}
           - os: ubuntu-18.04
             path: build
             file: DockerfileForPlus
@@ -205,7 +205,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: plus
-            k8s: ${{ env.K8S_V2 }}
+            k8s: ${{ K8S_V2 }}
           - os: ubuntu-18.04
             path: build
             file: DockerfileForPlus
@@ -213,7 +213,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: plus
-            k8s: ${{ env.K8S_V3 }}
+            k8s: ${{ K8S_V3 }}
           - os: ubuntu-18.04
             path: build
             file: DockerfileForPlus
@@ -221,7 +221,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: plus
-            k8s: ${{ env.K8S_V4 }}
+            k8s: ${{ K8S_V4 }}
           - os: ubuntu-18.04
             path: build
             file: DockerfileForPlus
@@ -229,7 +229,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: plus
-            k8s: ${{ env.K8S_V5 }}
+            k8s: ${{ K8S_V5 }}
           - os: ubuntu-18.04
             path: build/appprotect
             file: DockerfileWithAppProtectForPlus
@@ -237,7 +237,7 @@ jobs:
             tag: ${{ github.sha }}-ap
             marker: '-m appprotect'
             type: plus-ap
-            k8s: ${{ env.K8S_V1 }}
+            k8s: ${{ K8S_V1 }}
           - os: ubuntu-18.04
             path: build/appprotect
             file: DockerfileWithAppProtectForPlus
@@ -245,7 +245,7 @@ jobs:
             tag: ${{ github.sha }}-ap
             marker: '-m appprotect'
             type: plus-ap
-            k8s: ${{ env.K8S_V2 }}
+            k8s: ${{ K8S_V2 }}
           - os: ubuntu-18.04
             path: build/appprotect
             file: DockerfileWithAppProtectForPlus
@@ -253,7 +253,7 @@ jobs:
             tag: ${{ github.sha }}-ap
             marker: '-m appprotect'
             type: plus-ap
-            k8s: ${{ env.K8S_V3 }}
+            k8s: ${{ K8S_V3 }}
           - os: ubuntu-18.04
             path: build/appprotect
             file: DockerfileWithAppProtectForPlus
@@ -261,7 +261,7 @@ jobs:
             tag: ${{ github.sha }}-ap
             marker: '-m appprotect'
             type: plus-ap
-            k8s: ${{ env.K8S_V4 }}
+            k8s: ${{ K8S_V4 }}
           - os: ubuntu-18.04
             path: build/appprotect
             file: DockerfileWithAppProtectForPlus
@@ -269,7 +269,7 @@ jobs:
             tag: ${{ github.sha }}-ap
             marker: '-m appprotect'
             type: plus-ap
-            k8s: ${{ env.K8S_V5 }}
+            k8s: ${{ K8S_V5 }}
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
