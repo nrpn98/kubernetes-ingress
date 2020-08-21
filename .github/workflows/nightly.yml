@@ -230,7 +230,7 @@ jobs:
             file: DockerfileWithAppProtectForPlus
             image: nginx-plus-ingress
             tag: ${{ github.sha }}-ap
-            marker: '-m appprotect'
+            marker: ' -m appprotect'
             type: plus-ap
             k8s: 1.18.8
           - os: ubuntu-18.04
@@ -238,7 +238,7 @@ jobs:
             file: DockerfileWithAppProtectForPlus
             image: nginx-plus-ingress
             tag: ${{ github.sha }}-ap
-            marker: '-m appprotect'
+            marker: ' -m appprotect'
             type: plus-ap
             k8s: 1.17.5
           - os: ubuntu-18.04
@@ -246,7 +246,7 @@ jobs:
             file: DockerfileWithAppProtectForPlus
             image: nginx-plus-ingress
             tag: ${{ github.sha }}-ap
-            marker: '-m appprotect'
+            marker: ' -m appprotect'
             type: plus-ap
             k8s: 1.16.9
           - os: ubuntu-18.04
@@ -254,7 +254,7 @@ jobs:
             file: DockerfileWithAppProtectForPlus
             image: nginx-plus-ingress
             tag: ${{ github.sha }}-ap
-            marker: '-m appprotect'
+            marker: ' -m appprotect'
             type: plus-ap
             k8s: 1.15.11
           - os: ubuntu-18.04
@@ -262,7 +262,7 @@ jobs:
             file: DockerfileWithAppProtectForPlus
             image: nginx-plus-ingress
             tag: ${{ github.sha }}-ap
-            marker: '-m appprotect'
+            marker: ' -m appprotect'
             type: plus-ap
             k8s: 1.14.10
     steps:
