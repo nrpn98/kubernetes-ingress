@@ -14,11 +14,6 @@ env:
   DOCKER_BUILDKIT: 1
   GOLANG_VERSION: 1.14
   PYTHON_VERSION: 3.8
-  K8S_V1: 1.18.8
-  K8S_V2: 1.17.5
-  K8S_V3: 1.16.9
-  K8S_V4: 1.15.11
-  K8S_V5: 1.14.10
   K8S_TIMEOUT: 1m
   HELM_CHART_DIR: deployments/helm-chart
   HELM_CHART_VERSION: 0.0.0-edge
@@ -157,7 +152,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: oss
-            k8s: ${{ K8S_V1 }}
+            k8s: 1.18.8
           - os: ubuntu-18.04
             path: build
             file: Dockerfile
@@ -165,7 +160,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: oss
-            k8s: ${{ K8S_V2 }}
+            k8s: 1.17.5
           - os: ubuntu-18.04
             path: build
             file: Dockerfile
@@ -173,7 +168,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: oss
-            k8s: ${{ K8S_V3 }}
+            k8s: 1.16.9
           - os: ubuntu-18.04
             path: build
             file: Dockerfile
@@ -181,7 +176,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: oss
-            k8s: ${{ K8S_V4 }}
+            k8s: 1.15.11
           - os: ubuntu-18.04
             path: build
             file: Dockerfile
@@ -189,7 +184,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: oss
-            k8s: ${{ K8S_V5 }}
+            k8s: 1.14.10
           - os: ubuntu-18.04
             path: build
             file: DockerfileForPlus
@@ -197,7 +192,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: plus
-            k8s: ${{ K8S_V1 }}
+            k8s: 1.18.8
           - os: ubuntu-18.04
             path: build
             file: DockerfileForPlus
@@ -205,7 +200,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: plus
-            k8s: ${{ K8S_V2 }}
+            k8s: 1.17.5
           - os: ubuntu-18.04
             path: build
             file: DockerfileForPlus
@@ -213,7 +208,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: plus
-            k8s: ${{ K8S_V3 }}
+            k8s: 1.16.9
           - os: ubuntu-18.04
             path: build
             file: DockerfileForPlus
@@ -221,7 +216,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: plus
-            k8s: ${{ K8S_V4 }}
+            k8s: 1.15.11
           - os: ubuntu-18.04
             path: build
             file: DockerfileForPlus
@@ -229,7 +224,7 @@ jobs:
             tag: ${{ github.sha }}
             marker: ''
             type: plus
-            k8s: ${{ K8S_V5 }}
+            k8s: 1.14.10
           - os: ubuntu-18.04
             path: build/appprotect
             file: DockerfileWithAppProtectForPlus
@@ -237,7 +232,7 @@ jobs:
             tag: ${{ github.sha }}-ap
             marker: '-m appprotect'
             type: plus-ap
-            k8s: ${{ K8S_V1 }}
+            k8s: 1.18.8
           - os: ubuntu-18.04
             path: build/appprotect
             file: DockerfileWithAppProtectForPlus
@@ -245,7 +240,7 @@ jobs:
             tag: ${{ github.sha }}-ap
             marker: '-m appprotect'
             type: plus-ap
-            k8s: ${{ K8S_V2 }}
+            k8s: 1.17.5
           - os: ubuntu-18.04
             path: build/appprotect
             file: DockerfileWithAppProtectForPlus
@@ -253,7 +248,7 @@ jobs:
             tag: ${{ github.sha }}-ap
             marker: '-m appprotect'
             type: plus-ap
-            k8s: ${{ K8S_V3 }}
+            k8s: 1.16.9
           - os: ubuntu-18.04
             path: build/appprotect
             file: DockerfileWithAppProtectForPlus
@@ -261,7 +256,7 @@ jobs:
             tag: ${{ github.sha }}-ap
             marker: '-m appprotect'
             type: plus-ap
-            k8s: ${{ K8S_V4 }}
+            k8s: 1.15.11
           - os: ubuntu-18.04
             path: build/appprotect
             file: DockerfileWithAppProtectForPlus
@@ -269,7 +264,7 @@ jobs:
             tag: ${{ github.sha }}-ap
             marker: '-m appprotect'
             type: plus-ap
-            k8s: ${{ K8S_V5 }}
+            k8s: 1.14.10
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
